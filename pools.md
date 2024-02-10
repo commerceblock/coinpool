@@ -62,5 +62,4 @@ So for `N` particiapnts there would need to be `N` new shared pubkeys generated 
 
 Off-chain transfers within the group can be performed in the same way described in the chainpool paper but with decrementing `nLocktime` timelocks replacing the Eltoo mechanism (which requires the `SIGHASH_ANYPREVOUT` soft fork). The initial backup `nLocktime` would be set to a future block height and then decremented with each state update (requiring all participants sign) in the same way as mercury statechains. This would have to downside of setting a timelimit to the onchain coinpool UTXO and requiring a delay before unilateral backouts could be confirmed. 
 
-### Coodinator roles
 
